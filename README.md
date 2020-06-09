@@ -6,7 +6,8 @@ File structure:
 Line 0: Number of cases to process.
 
 Lines 1-n: Each line has one Latin square. First integer is the square's dimension
-and the rest are the cell values (one int for each cell), from left to right and top to bottom.
+and the rest are the cell values (one for each cell), from left to right and top to bottom,
+separated by a single whitespace.
 
 ### Usage
 1. Download project.
