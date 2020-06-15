@@ -8,7 +8,9 @@ public class Countdown {
 	
 	public synchronized void dec() {
 		this.ct--;
-		notifyAll();
+		if (this.ct <= 0) {
+			notifyAll();
+		}
 	}
 	
 	public synchronized void zero() throws InterruptedException {
