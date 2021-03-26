@@ -77,6 +77,6 @@ public class LatinSquareValidationTest {
 		assertEquals(row0, parsedLatinSquare.get(0));
 		assertEquals(row1, parsedLatinSquare.get(1));
 		assertEquals(row2, parsedLatinSquare.get(2));
-		assertEquals(3, parsedLatinSquare.size());
+		assertEquals(1, parsedLatinSquare.size());
 	}
 }
