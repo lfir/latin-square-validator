@@ -17,7 +17,7 @@ public class LatinSquareValidationTest {
 	@Test
 	public void indexOfValidSquareIsAddedToIndexList() {
 		String input = "2 1 2 2 1";
-		Validacion validation = new Validacion(0, input, this.validIndexes, this.cd);
+		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
 		assertTrue(this.validIndexes.getListaIndices().contains(0));
@@ -27,7 +27,7 @@ public class LatinSquareValidationTest {
 	@Test
 	public void indexOfSquareWithInvalidCellIsNotAddedToIndexList() {
 		String input = "2 1 2 2 8";
-		Validacion validation = new Validacion(0, input, this.validIndexes, this.cd);
+		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
 		assertTrue(this.validIndexes.getListaIndices().isEmpty());
@@ -36,7 +36,7 @@ public class LatinSquareValidationTest {
 	@Test
 	public void indexOfSquareWithInvalidRowIsNotAddedToIndexList() {
 		String input = "3 1 2 2 2 3 1 3 1 2";
-		Validacion validation = new Validacion(0, input, this.validIndexes, this.cd);
+		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
 		assertTrue(this.validIndexes.getListaIndices().isEmpty());
@@ -45,7 +45,7 @@ public class LatinSquareValidationTest {
 	@Test
 	public void indexOfSquareWithInvalidColumnIsNotAddedToIndexList() {
 		String input = "3 1 2 3 1 3 2 2 3 1";
-		Validacion validation = new Validacion(0, input, this.validIndexes, this.cd);
+		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
 		assertTrue(this.validIndexes.getListaIndices().isEmpty());
@@ -54,7 +54,7 @@ public class LatinSquareValidationTest {
 	@Test
 	public void inputStringIsCorrectlyConvertedToListOfLists() {
 		String input = "3 1 2 3 1 3 2 2 3 1";
-		Validacion validation = new Validacion(0, input, this.validIndexes, this.cd);
+		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		List<Integer> row0 = new ArrayList<Integer>();
 		row0.add(1);
 		row0.add(2);
@@ -68,7 +68,7 @@ public class LatinSquareValidationTest {
 		row2.add(3);
 		row2.add(1);
 		
-		List<List<Integer>> parsedLatinSquare = validation.leerCuadrado();
+		List<List<Integer>> parsedLatinSquare = validation.parseLatinSquare();
 		
 		assertEquals(row0, parsedLatinSquare.get(0));
 		assertEquals(row1, parsedLatinSquare.get(1));

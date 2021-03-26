@@ -14,16 +14,16 @@ public class ConcurrentLatinSquareValidationTest {
 	public void setUp() throws InterruptedException {
 		this.inputs = this.getInputs();
 		this.threadPool = new ThreadPool(2);
-		this.countDown = new Countdown((new Integer(this.inputs.get(0))));
+		this.countDown = new Countdown(Integer.valueOf(this.inputs.get(0)));
 		this.validIndexes = new SortedList();
 		
 		for (int i = 1; i < this.inputs.size(); i++) {
-    		Validacion validacion = new Validacion(
+    		Validation validation = new Validation(
     				i, this.inputs.get(i), this.validIndexes, this.countDown
     		);
-    		this.threadPool.agregarParaValidar(validacion);
+    		this.threadPool.addTask(validation);
     	}
-    	this.threadPool.descartarThreads();
+    	this.threadPool.discardThreads();
     	this.countDown.zero(); // Wait until all threads have finished
 	}
 	

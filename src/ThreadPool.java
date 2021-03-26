@@ -1,24 +1,24 @@
 
 public class ThreadPool {
-	private Integer nroLatinWorkers;
+	private Integer numberOfLatinWorkers;
 	private Buffer buffer;
 	
-	public ThreadPool(Integer nroLatinWorkers) {
-		this.nroLatinWorkers = nroLatinWorkers;
+	public ThreadPool(Integer numberOfLatinWorkers) {
+		this.numberOfLatinWorkers = numberOfLatinWorkers;
 		this.buffer = new Buffer(100);
 		
-		for (int i = 0; i < this.nroLatinWorkers; i++) { 
+		for (int i = 0; i < this.numberOfLatinWorkers; i++) { 
 			(new LatinWorker(this.buffer)).start();
 		}
 	}
 	
-	public void descartarThreads() throws InterruptedException {
-		for (int i = 0; i < this.nroLatinWorkers; i++) { 
+	public void discardThreads() throws InterruptedException {
+		for (int i = 0; i < this.numberOfLatinWorkers; i++) { 
 			this.buffer.write(new PoisonPill());
 		}
 	}
 	
-	public void agregarParaValidar(Validacion validacion) throws InterruptedException {
-		this.buffer.write(validacion);
+	public void addTask(Validation validation) throws InterruptedException {
+		this.buffer.write(validation);
 	}
 }

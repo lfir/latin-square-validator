@@ -9,8 +9,8 @@ public class LatinWorker extends Thread {
 	public void run() {
 		try {
 			while (true) {
-				Runnable validacion = (Runnable) this.buffer.read();
-				validacion.run();
+				Runnable validation = (Runnable) this.buffer.read();
+				validation.run();
 			}
 		} catch (PoisonPillException | InterruptedException exception) {}
 	}
