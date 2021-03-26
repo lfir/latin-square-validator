@@ -1,6 +1,10 @@
-import static org.junit.Assert.*;
+package edu.unq.tpi.pconc.latinsquarevalidator;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 

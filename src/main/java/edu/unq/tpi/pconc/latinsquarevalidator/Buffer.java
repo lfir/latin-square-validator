@@ -1,3 +1,4 @@
+package edu.unq.tpi.pconc.latinsquarevalidator;
 
 public class Buffer {
 	private Object[] data;

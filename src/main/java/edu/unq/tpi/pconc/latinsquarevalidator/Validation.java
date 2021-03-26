@@ -1,3 +1,4 @@
+package edu.unq.tpi.pconc.latinsquarevalidator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

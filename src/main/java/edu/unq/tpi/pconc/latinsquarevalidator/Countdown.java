@@ -1,3 +1,4 @@
+package edu.unq.tpi.pconc.latinsquarevalidator;
 
 public class Countdown {
 	private int ct;

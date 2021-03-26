@@ -1,3 +1,4 @@
+package edu.unq.tpi.pconc.latinsquarevalidator;
 
 public class LatinWorker extends Thread {
 	private Buffer buffer;
