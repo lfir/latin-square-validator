@@ -24,8 +24,8 @@ public class LatinSquareValidationTest {
 		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
-		assertTrue(this.validIndexes.getListaIndices().contains(0));
-		assertEquals(1, this.validIndexes.getListaIndices().size());
+		assertTrue(this.validIndexes.getList().contains(0));
+		assertEquals(1, this.validIndexes.getList().size());
 	}
 	
 	@Test
@@ -34,7 +34,7 @@ public class LatinSquareValidationTest {
 		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
-		assertTrue(this.validIndexes.getListaIndices().isEmpty());
+		assertTrue(this.validIndexes.getList().isEmpty());
 	}
 	
 	@Test
@@ -43,7 +43,7 @@ public class LatinSquareValidationTest {
 		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
-		assertTrue(this.validIndexes.getListaIndices().isEmpty());
+		assertTrue(this.validIndexes.getList().isEmpty());
 	}
 	
 	@Test
@@ -52,7 +52,7 @@ public class LatinSquareValidationTest {
 		Validation validation = new Validation(0, input, this.validIndexes, this.cd);
 		validation.run();
 		
-		assertTrue(this.validIndexes.getListaIndices().isEmpty());
+		assertTrue(this.validIndexes.getList().isEmpty());
 	}
 	
 	@Test

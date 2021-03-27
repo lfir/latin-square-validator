@@ -33,7 +33,7 @@ public class ConcurrentLatinSquareValidationTest {
 	
 	@Test
 	public void outputArrayContainsIndexesOfValidSquares() {
-		List<Integer> validIndexes = this.validIndexes.getListaIndices();
+		List<Integer> validIndexes = this.validIndexes.getList();
 
 		assertTrue(validIndexes.contains(1));
 		assertTrue(validIndexes.contains(4));
@@ -43,7 +43,7 @@ public class ConcurrentLatinSquareValidationTest {
 	
 	@Test
 	public void outputArrayContainsIndexesOfValidSquaresInAscendingOrder() {
-		List<Integer> validIndexes = this.validIndexes.getListaIndices();
+		List<Integer> validIndexes = this.validIndexes.getList();
 		
 		assertEquals(0, validIndexes.indexOf(1));
 		assertEquals(1, validIndexes.indexOf(4));

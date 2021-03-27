@@ -32,7 +32,7 @@ public class Main {
     	threadPool.discardThreads();
     	
     	countDown.zero();
-    	System.out.println("Index of the valid latin squares: " + validSquareIndexes.getListaIndices());
+    	System.out.println("Index of the valid latin squares: " + validSquareIndexes.getList());
     	
     	Instant end = Instant.now();
     	

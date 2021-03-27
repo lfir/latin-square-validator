@@ -11,7 +11,7 @@ public class SortedList {
 		Collections.sort(this.l);
     }
     
-    public synchronized List<Integer> getListaIndices() {
+    public synchronized List<Integer> getList() {
     	return this.l;
     }
 }
