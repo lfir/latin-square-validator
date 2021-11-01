@@ -1,6 +1,6 @@
+## Latin Square validator
 ![workflow CI](https://github.com/alonsoem/TTIP-Grupo5-BackEnd/actions/workflows/ci.yml/badge.svg)
 
-## Latin Square validator
 Reads Latin squares from a file (i. e. sample-inputs.txt) and outputs the line number of the valid ones, optionally concurrently.
 
 File structure:
