@@ -1,5 +1,5 @@
 ## Latin Square validator
-![](https://github.com/Asta1986/latin-square-validator/actions/workflows/ci.yml/badge.svg)
+[![](https://github.com/Asta1986/latin-square-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/Asta1986/latin-square-validator/actions/workflows/ci.yml)
 
 Reads Latin squares from a file (i. e. sample-inputs.txt) and outputs the line number of the valid ones, optionally concurrently.
 
